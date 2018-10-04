@@ -1,4 +1,5 @@
 var dodger = document.getElementById('dodger')
+var gameDiv = document.getElementById('game')
 
 function moveDodgerLeft() {
   var leftNumbers = dodger.style.left.replace('px', '')
@@ -8,7 +9,10 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-
+  var leftNumbers = dodger.style.left.replace('px', '')
+  var left = parseInt(leftNumbers, 10)
+  if (left <= ) { return }
+  dodger.style.left = `${left + 10}px`
 }
 
 document.addEventListener('keydown', function(key) {
