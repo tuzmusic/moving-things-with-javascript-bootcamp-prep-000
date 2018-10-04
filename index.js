@@ -11,8 +11,7 @@ function moveDodgerRight() {
 }
 
 document.addEventListener('keydown', function(key) {
-  console.log("key!");
-  if (key.which === 37) {
+  if (key.which === 37 && dodger.style.left > 0) {
     moveDodgerLeft()
   } else if (key.which === 39) {
     moveDodgerRight()
