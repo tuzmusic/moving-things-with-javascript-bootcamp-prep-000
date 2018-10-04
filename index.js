@@ -1,4 +1,4 @@
-var dodger = $('#dodger')
+var dodger = document.getElementById('dodger')
 
 function moveDodgerLeft() {
   var leftNumbers = dodger.style.left.replace('px', '')
