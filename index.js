@@ -11,9 +11,11 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   console.log('right pressed');
   var rightNumbers = dodger.style.right.replace('px', '')
+  var leftNumbers = dodger.style.left.replace('px', '')
+  var left = parseInt(leftNumbers, 10)
   var right = parseInt(rightNumbers, 10)
   // if (right <= 0) { return }
-  dodger.style.right = `${right - 10}px`
+  dodger.style.right = `${left + 10}px`
 }
 
 document.addEventListener('keydown', function(key) {
