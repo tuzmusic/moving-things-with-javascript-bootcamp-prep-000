@@ -9,7 +9,7 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  debugger
+  console.log('right pressed');
   var rightNumbers = dodger.style.right.replace('px', '')
   var right = parseInt(rightNumbers, 10)
   // if (right <= 0) { return }
